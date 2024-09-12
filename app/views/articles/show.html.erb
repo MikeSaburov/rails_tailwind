@@ -1,12 +1,14 @@
+<div class="flex justify-between items-center">
 <button type="button" class="mb-5 px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300
  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><%= link_to "На главную", root_path %></button>
-
+<span class="text-xs text-gray-500"> <%= localize(@article.created_at, :format => :sample) %> г.</span>
+</div>
 <div class="block mb-5 p-6 bg-white border border-gray-200 rounded-lg shadow
  dark:bg-gray-800 dark:border-gray-700 ">
 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= @article.title %></h5>
 
 <p class="font-normal text-gray-700 dark:text-gray-400"><%= @article.body %></p>
-<p class="pt-5 text-right font-bold italic"><%= @article.author %><span class="text-sm"> <%= localize(@article.created_at, :format => :long) %></span></p> 
+<p class="pt-5 text-right font-bold italic"><%= @article.author %></p> 
  <p></p>
 </div>
 
