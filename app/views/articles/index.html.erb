@@ -1,6 +1,15 @@
-<div class="container mx-auto px-4">
-  <h1 class="text-3xl font-bold text-orange-800 underline">
-    Hello world!
+<h1 class="text-xl font-bold flex items-center">
+    Статьи
 </h1>
-</div>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
 
