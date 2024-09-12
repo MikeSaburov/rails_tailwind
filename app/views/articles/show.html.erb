@@ -6,8 +6,8 @@
 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= @article.title %></h5>
 
 <p class="font-normal text-gray-700 dark:text-gray-400"><%= @article.body %></p>
-<p class="pt-5 text-right font-bold italic"><%= @article.author %></p> 
- 
+<p class="pt-5 text-right font-bold italic"><%= @article.author %><span class="text-sm"> <%= localize(@article.created_at, :format => :long) %></span></p> 
+ <p></p>
 </div>
 
 
