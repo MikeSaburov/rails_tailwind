@@ -1,6 +1,7 @@
 <h1><%= @article.title %></h1>
 
 <p><%= @article.body %></p>
+<p class="pt-5 text-right"><%= @article.author %></p>
 
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
